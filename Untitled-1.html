@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sample Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Satisfy|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .fa {
+            font-size: 40px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        /*         
+        .btn-primary {
+            background-color: rgb(37, 37, 37);
+            border-color: white;
+            border-width: 1px;
+        }
+        
+        .btn-primary:hover {
+            background-color: white;
+            ;
+            border-color: white;
+            border-width: 1px;
+            color: black;
+            transition-duration: .2s;
+        }
+        */
+        
+        .btn-success {
+            background-color: rgb(37, 37, 37);
+            border-color: white;
+            border-width: 1px;
+        }
+        
+        .btn-success:hover {
+            background-color: white;
+            ;
+            border-color: white;
+            border-width: 1px;
+            color: black;
+            transition-duration: .2s;
+        }
+        
+        .btn-danger {
+            background-color: rgb(37, 37, 37);
+            border-color: white;
+            border-width: 1px;
+        }
+        
+        .btn-danger:hover {
+            background-color: white;
+            ;
+            border-color: white;
+            border-width: 1px;
+            color: black;
+            transition-duration: .2s;
+        }
+        
+        .btn-warning {
+            background-color: rgb(37, 37, 37);
+            border-color: white;
+            border-width: 1px;
+        }
+        
+        .btn-warning:hover {
+            background-color: white;
+            ;
+            border-color: white;
+            border-width: 1px;
+            color: black;
+            transition-duration: .2s;
+        }
+        
+        .fa:hover {
+            box-shadow: 0px 0px 20px black;
+            transition-duration: .4s;
+            background-color: white;
+            transition-duration: 1s;
+        }
+        
+        .card-body:hover {
+            background-color: white;
+            color: black;
+            box-shadow: 0px 0px 20px black;
+            transition-duration: 1s;
+        }
+        
+        .fa-android {
+            color: green;
+        }
+        
+        .fa-github {
+            color: grey;
+        }
+        
+        .fa-youtube {
+            color: rgb(109, 0, 0);
+        }
+        
+        .fa-amazon {
+            color: rgb(180, 87, 0)
+        }
+        
+        .fa-facebook {
+            color: rgb(0, 0, 53);
+        }
+        
+        .fa-whatsapp {
+            color: green;
+        }
+        
+        .fa-css3 {
+            color: orange;
+        }
+        
+        .fa-html5 {
+            color: orangered;
+        }
+        
+        .fa-twitter {
+            color: rgb(84, 185, 219);
+        }
+        
+        img {
+            border-radius: 20px;
+        }
+        
+        .jumbotron,
+        footer {
+            background-color: rgb(54, 54, 54);
+        }
+        
+        .card-body {
+            background-color: rgb(49, 49, 49);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        .blue {
+            color: blue
+        }
+        
+        .green {
+            color: green;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(37, 37, 37);
+            color: white;
+        }
+        
+        .item {
+            height: 500px;
+        }
+        
+        img:hover {
+            box-shadow: 0px 0px 50px rgb(199, 199, 199);
+            transition-duration: .5s;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            padding: 25px;
+        }
+        
+        tr:hover {
+            background-color: rgba(207, 207, 207, 0.432);
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">Habibee</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon
+                                    glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="width:100%; height:500px;">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="width:100%; height:500px;">
+                <div class="item active">
+                    <img src="img4.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>LA is always so much fun!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img5.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img3.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="jumbotron" style="background-image: url('img1jpg')">
+        <div class="container text-center">
+            <h1>Welcome to Habibee</h1>
+            <p>At Habibee we offer you timely service and very good hospitality...
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3>Some of my Work</h3><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="img1.jpg" class="img-responsive" style="width:100%; height:200px;" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="img2.jpg" class="img-responsive" style="width:100%
+                        ;height:200px;" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="img3.jpg" class="img-responsive" style="width:100%;height:200px;" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="img4.jpg" class="img-responsive" style="width:100%;height:200px;" alt="Image">
+            </div>
+        </div>
+        <!-- </div><br>
+    <div class="jumbotron">
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div> -->
+        <br><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Font-Style:Shadows into light</h5>
+                        <p class="card-text" style="font-family: 'Shadows Into Light', cursive; font-size:19px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate sit tempora. Ad, fugit quisquam ab dolorem praesentium vitae. Voluptatum dolorum, quasi expedita ex eius magni nulla illo corporis quia.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Font-family:Amatic SC</h5>
+                        <p class="card-text" style="font-family: 'Amatic SC',
+                                cursive; font-size:21px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quas harum ad ea exercitationem cupiditate deleniti modi sapiente tempora labore ipsum tempore dolorem mollitia voluptatum, ipsam illum ab voluptatibus numquam.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Font-family:Satisfy</h5>
+                        <p class="card-text" style="font-family: 'Satisfy',
+                                cursive; font-size:18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum eligendi corporis, eveniet quisquam nisi consequatur, dignissimos vel expedita ab veritatis ipsam iste commodi voluptas molestias dolores. Non, aperiam. Nesciunt,
+                            reprehenderit!
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Font-family:Gloria</h5>
+                        <p class="card-text" style="font-family: 'Gloria Hallelujah', cursive; font-size:16px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, dolore quasi! Voluptate, quaerat deserunt aliquam id cupiditate necessitatibus sapiente officiis autem laudantium culpa suscipit facere assumenda, amet ex et perspiciatis!
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+
+        <p>
+            <a class="btn btn-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
+                    first element</a>
+            <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle
+                    second element</button>
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1
+                    multiCollapseExample2">Toggle
+                    both elements</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iste provident rem, quos praesentium aliquam mollitia hic tempora ipsam aut, at totam laudantium dolores voluptates assumenda magni aliquid architecto. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Veniam porro nemo, nostrum quis cumque culpa ipsum a nam voluptates tenetur distinctio dolor tempora voluptate ad impedit quam facere explicabo? Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Culpa, iste provident rem, quos praesentium aliquam mollitia hic tempora ipsam aut, at totam laudantium dolores voluptates assumenda magni aliquid architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro
+                        nemo, nostrum quis cumque culpa ipsum a nam voluptates tenetur distinctio dolor tempora voluptate ad impedit quam facere explicabo? Aspernatur.
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                Coffee
+                            </li>
+                            <li>
+                                Tea
+                            </li>
+                            <li>
+                                Juice
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+                        iste provident rem, quos praesentium aliquam mollitia hic tempora ipsam aut, at totam laudantium dolores voluptates assumenda magni aliquid architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro nemo,
+                        nostrum quis cumque culpa ipsum a nam voluptates tenetur distinctio dolor tempora voluptate ad impedit quam facere explicabo? Aspernatur.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h2>Javascript Functionalities</h2>
+
+                <p>Number Increment and Decrement:
+                    <button class="btn btn-danger" onclick="decrease()">-</button>
+                    <span id="spanID" class="blue">0</span>
+                    <button class="btn btn-success" onclick="increase()">+</button>
+                </p>
+                <img src="img2.jpg" id="imgWidth" class="img-responsive " style="width:240px
+                ;height:240px; margin-left:40%;" alt="Image">
+                <br> Size:
+                <button class="btn btn-danger" onclick="decreaseWidth()">-</button>
+
+                <button class="btn btn-success" onclick="increaseWidth()()">+</button> Radius:
+                <button class="btn btn-danger" onclick="decreaseRadius()">-</button>
+                <button class="btn btn-danger" onclick="normalRadius()">|</button>
+                <button class="btn btn-success" onclick="increaseRadius()">+</button>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="container">
+            <div class="text-center liner-color">
+                <h2>
+                    Font Awesome Icons
+                </h2>
+                <div class="row">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-css3"></i>
+                    <i class="fa fa-html5"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-amazon"></i>
+                    <i class="fa fa-android"></i>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+
+        </footer>
+
+</body>
+
+</html>
